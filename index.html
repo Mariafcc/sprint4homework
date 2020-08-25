@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container" id="mainContainer">
+      <h1>Start Quiz</h1>
+      <div class="timer">Time: <span id="time">0</span></div>
+      <div id="question-container" class="hide">
+        <div id="question">Question</div>
+        <div id="answer-buttons" class="btn-grid"></div>
+      </div>
+      <div class="controls" id="buttons">
+        <button id="start-bt" class="start-btn btn">Click to start</button>
+      </div>
+    </main>
+    <div class="hide score" id="score">
+      <input type="text" id="name" placeholder="name" />
+      <button id="submit" onclick="highScore()">Submit</button>
+    </div>
+    <div class="total hide" id="total">
+      High Score
+      <ul id="highscore"></ul>
+      <button id="clear" onclick="clearHighScore()">Clear</button>
+      <button id="reset" onclick="resetQuiz()">Reset</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
